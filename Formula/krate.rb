@@ -26,6 +26,7 @@ class Krate < Formula
     keep_alive true
     log_path var/"log/krate/anvild.log"
     error_log_path var/"log/krate/anvild-error.log"
+    environment_variables PATH: "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
   end
 
   def caveats
