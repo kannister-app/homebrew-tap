@@ -5,14 +5,14 @@ class Krate < Formula
   license "Commercial"
 
   url "https://github.com/kannister-app/krate-vm-engine/archive/refs/tags/v0.10.0.tar.gz"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
 
   depends_on :macos
   depends_on arch: :arm64
 
   bottle do
-    root_url "file:///tmp"
-    sha256 cellar: :any_skip_relocation, arm64_monterey: "ad199c36a3bb4895b06f3343a98253c066142adbb6e0ca950c1983c73ff1a065"
+    root_url "https://ghcr.io/v2/kannister-app/krate/krate-bottle/blobs"
+    sha256 cellar: :any_skip_relocation, arm64_monterey: "f0fcc30618ff9225a9aa7d9190cfa56bc1db91439b69dd40e2ccfe597ec27eee"
   end
 
   def install
