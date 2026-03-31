@@ -1,18 +1,18 @@
 class Krate < Formula
   desc "Micro-VM engine for developer workload isolation"
   homepage "https://kannister.app"
-  version "0.10.0"
+  version "0.10.1"
   license "Commercial"
 
-  url "https://github.com/kannister-app/krate-vm-engine/archive/refs/tags/v0.10.0.tar.gz"
+  url "https://github.com/kannister-app/krate-vm-engine/archive/refs/tags/v0.10.1.tar.gz"
   sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
 
   depends_on :macos
   depends_on arch: :arm64
 
   bottle do
-    root_url "https://github.com/kannister-app/homebrew-tap/releases/download/v0.10.0"
-    sha256 cellar: :any_skip_relocation, arm64_monterey: "f0fcc30618ff9225a9aa7d9190cfa56bc1db91439b69dd40e2ccfe597ec27eee"
+    root_url "https://github.com/kannister-app/homebrew-tap/releases/download/v0.10.1"
+    sha256 cellar: :any_skip_relocation, arm64_monterey: "b1bb6626683a4220b6a46c196f3affd0d17963c8c2f8b65e67783e743a3c9960"
   end
 
   def install
