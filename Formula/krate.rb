@@ -11,7 +11,7 @@ class Krate < Formula
   depends_on arch: :arm64
 
   bottle do
-    root_url "https://ghcr.io/v2/kannister-app/krate/krate-bottle/blobs"
+    root_url "https://github.com/kannister-app/homebrew-tap/releases/download/v0.10.0"
     sha256 cellar: :any_skip_relocation, arm64_monterey: "f0fcc30618ff9225a9aa7d9190cfa56bc1db91439b69dd40e2ccfe597ec27eee"
   end
 
