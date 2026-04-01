@@ -12,7 +12,7 @@ class Krate < Formula
 
   bottle do
     root_url "https://github.com/kannister-app/homebrew-tap/releases/download/v0.11.0"
-    sha256 cellar: :any_skip_relocation, arm64_monterey: "5789f15f7abc7c71553687a6e2cade28ade688224fd591db2ae1e151618e5cd0"
+    sha256 cellar: :any_skip_relocation, arm64_monterey: "0c84a94264cbad6b38477494bda31f797d98e64889a14430998ee112eef825ea"
   end
 
   def install
@@ -26,6 +26,7 @@ class Krate < Formula
   service do
     run [opt_bin/"anvild"]
     keep_alive true
+    process_type :interactive
     log_path var/"log/krate/anvild.log"
     error_log_path var/"log/krate/anvild-error.log"
     environment_variables PATH: "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin",
