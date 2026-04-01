@@ -12,7 +12,7 @@ class Krate < Formula
 
   bottle do
     root_url "https://github.com/kannister-app/homebrew-tap/releases/download/v0.11.0"
-    sha256 cellar: :any_skip_relocation, arm64_monterey: "d25470d7041c6bba9e10b466e9218031c523ccc614305582a56c6358887caf4b"
+    sha256 cellar: :any_skip_relocation, arm64_monterey: "49de6b020ac89a3e544e8cb2db339327ecbf87daf8e34d1fc884ebdf9d5ad208"
   end
 
   def install
@@ -23,23 +23,12 @@ class Krate < Formula
     (share/"krate").install "io.kannister.anvild.plist" if File.exist? "io.kannister.anvild.plist"
   end
 
-  service do
-    run [opt_bin/"anvild"]
-    keep_alive true
-    process_type :interactive
-    log_path var/"log/krate/anvild.log"
-    error_log_path var/"log/krate/anvild-error.log"
-    environment_variables PATH: "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin",
-                          ANVIL_KERNEL_PATH: "#{HOMEBREW_PREFIX}/share/krate/vmlinuz",
-                          ANVIL_INIT_PATH: "#{HOMEBREW_PREFIX}/share/krate/anvil-guest-init"
-  end
-
   def caveats
     <<~EOS
-      To start anvild now and auto-start on login:
-        brew services start krate
+      krate automatically starts anvild when needed — just run:
+        krate run alpine:latest
 
-      Note: `brew upgrade krate` restarts anvild and stops running workloads.
+      No manual daemon management required.
     EOS
   end
 end
