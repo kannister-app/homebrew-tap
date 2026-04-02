@@ -12,7 +12,7 @@ class Krate < Formula
 
   bottle do
     root_url "https://github.com/kannister-app/homebrew-tap/releases/download/v0.14.0"
-    sha256 cellar: :any_skip_relocation, arm64_monterey: "e4aa376304643d4c1a61e63f4e81305c683d022e1acb1801f7de2d5e9e98920f"
+    sha256 cellar: :any_skip_relocation, arm64_monterey: "c49605ada1edc09b88046762d4f6fe8ddf822fa8230e2cb38e445b297a1148ed"
   end
 
   def install
