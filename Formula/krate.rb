@@ -1,5 +1,5 @@
 class Krate < Formula
-  desc "Micro-VM engine for developer workload isolation"
+  desc "CLI for the krate micro-VM platform"
   homepage "https://kannister.app"
   version "0.17.0"
   license "Commercial"
