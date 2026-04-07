@@ -22,7 +22,7 @@ class KrateDev < Formula
       DEV CHANNEL — points at auth.krate.sh (dev server)
 
       Test the install:
-        krate run hello-world
+        krate run hello-krate
 
       Log in to your krate account:
         krate login
