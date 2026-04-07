@@ -5,7 +5,7 @@ class KrateDev < Formula
   license "Commercial"
 
   url "https://github.com/kannister-app/krate/releases/download/v0.22.0-dev/krate-dev-0.22.0-arm64-darwin.tar.gz"
-  sha256 "c908347e09e52a5012e8a4f7eec44edbfff46c2931c45cff4077b50d1e5b2184"
+  sha256 "bebb5b0d2333ef3d0af8243345ad879bd62478bc2e655c034049cd37fdb6a97f"
 
   depends_on :macos
   depends_on arch: :arm64
