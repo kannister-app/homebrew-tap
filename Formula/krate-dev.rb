@@ -1,11 +1,11 @@
 class KrateDev < Formula
   desc "CLI for the krate micro-VM platform (dev channel)"
   homepage "https://kannister.app"
-  version "0.32.0-dev"
+  version "0.32.1-dev"
   license "Commercial"
 
-  url "https://github.com/kannister-app/krate/releases/download/v0.32.0-dev/krate-dev-0.32.0-arm64-darwin.tar.gz"
-  sha256 "06c8c97793495bf4421b6f831ffa3b7615fb1289138b422c1163df6d0fce07ca"
+  url "https://github.com/kannister-app/krate/releases/download/v0.32.1-dev/krate-dev-0.32.1-arm64-darwin.tar.gz"
+  sha256 "7be59c4f44a45e48f4eb349376f9241aae892c518e2a2116d04067d07ed5edfd"
 
   depends_on :macos
   depends_on arch: :arm64
