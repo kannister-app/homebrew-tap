@@ -30,6 +30,14 @@ class KrateDev < Formula
       Check configuration:
         krate info
 
+      VM debug logging (recommended for dev work):
+        echo 'export KRATE_VM_DEBUG=1' >> ~/.zshrc
+        source ~/.zshrc
+
+      With KRATE_VM_DEBUG=1, every VM writes a forensic transcript to
+      ~/.krate/logs/<workload-id>/ and stays open after the workload
+      exits so you can `krate exec <id> sh` to inspect a broken VM.
+
       No manual daemon management required.
     EOS
   end
